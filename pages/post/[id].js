@@ -1,13 +1,13 @@
 import Layout from '../../components/layout'
-import { EmpleadoService } from '../../service/empService'
+import { EmpleadoService } from '../../lib/empService'
 
 const serviceEmpleado = new EmpleadoService()
 
 export default function Post({postData}) {
+  console.log(postData)
   return <Layout>
-      <div>Nombres: {postData.nombres}</div>
-      <div>Nombres: {postData.apellidos}</div>
-      <div>Nombres: {postData.fecha_ingreso}</div>
+      <div>id: {postData.id_empleado}</div>
+      <div>nombres: {postData.nombres}</div>
     </Layout>
 }
 

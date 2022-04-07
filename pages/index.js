@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import { EmpleadoService } from '../service/empService'
+import { EmpleadoService } from '../lib/empService'
 import utilStyles from '../styles/utils.module.css'
 
 export default function Home({data, ej}) {
@@ -13,7 +13,6 @@ export default function Home({data, ej}) {
         <p>Pagina de prueba</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
         {
           
